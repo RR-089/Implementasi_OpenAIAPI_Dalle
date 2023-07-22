@@ -36,7 +36,7 @@ const Home = () => {
               className="flex flex-col gap-5"
             >
               <p className="max-w-md font-normal text-gray-600 text-base">
-                Buat desain baju yang unik dengan alat kostumisasi 3D dan berbasis AI dari OpenAI. <strong>Luapkan imajinasi mu</strong>{" "} dan buat gaya kamu sendiri.
+                Buat desain baju yang unik dengan alat kustomisasi 3D dan berbasis AI dari OpenAI. <strong>Luapkan imajinasi mu</strong>{" "} dan buat gaya kamu sendiri.
               </p>
 
               <CustomButton 
