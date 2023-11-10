@@ -65,7 +65,9 @@ const Customizer = () => {
 
       handleDecals(type, `data:image/png;base64,${data.photo}`)
     } catch (error) {
-      alert(error)
+      alert(error);
+      alert("Token Gratis AI API dari OpenAI telah habis fitur AI akan dinonaktifkan dan PI juga telah selesai sehingga hasil implementasi AI API tidak lagi dipakai");
+      alert("Hehe maklum kaum kere, pengennya yang gratis walaupun PI terbilang cukup penting ;v");
     } finally {
       setGeneratingImg(false);
       setActiveEditorTab("");
