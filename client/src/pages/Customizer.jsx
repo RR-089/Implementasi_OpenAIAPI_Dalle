@@ -46,32 +46,32 @@ const Customizer = () => {
   }
 
   const handleSubmit = async (type) => {
-    // if(!prompt) return alert("Please enter a prompt");
+    if(!prompt) return alert("Please enter a prompt");
 
-    // try {
-    //   setGeneratingImg(true);
+    try {
+      setGeneratingImg(true);
 
-    //   const response = await fetch('https://implementasi-open-aiapi-dalle.vercel.app/api/v1/dalle', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify({
-    //       prompt,
-    //     })
-    //   })
+      const response = await fetch('https://implementasi-open-aiapi-dalle.vercel.app/api/v1/dalle', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          prompt,
+        })
+      })
 
-    //   const data = await response.json();
+      const data = await response.json();
 
-    //   handleDecals(type, `data:image/png;base64,${data.photo}`)
-    // } catch (error) {
-    //   alert(error);
-    // } finally {
-    //   setGeneratingImg(false);
-    //   setActiveEditorTab("");
-    // }
-    alert("Token Gratis AI API dari OpenAI telah habis fitur AI akan dinonaktifkan dan PI juga telah selesai sehingga hasil implementasi AI API tidak lagi dipakai");
-    alert("Hehe maklum kaum kere hore, pengennya yang gratis walaupun PI terbilang cukup penting ;v");
+      handleDecals(type, `data:image/png;base64,${data.photo}`)
+    } catch (error) {
+      alert(error);
+    } finally {
+      setGeneratingImg(false);
+      setActiveEditorTab("");
+    }
+    // alert("Token Gratis AI API dari OpenAI telah habis fitur AI akan dinonaktifkan dan PI juga telah selesai sehingga hasil implementasi AI API tidak lagi dipakai");
+    // alert("Hehe maklum kaum kere hore, pengennya yang gratis walaupun PI terbilang cukup penting ;v");
   }
 
   const handleDecals = (type, result) => {
