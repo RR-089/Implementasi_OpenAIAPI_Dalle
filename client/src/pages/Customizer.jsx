@@ -51,7 +51,7 @@ const Customizer = () => {
     try {
       setGeneratingImg(true);
 
-      const response = await fetch('https://implementasi-open-aiapi-dalle-9b9zra5nu-rr-089.vercel.app/api/v1/dalle', {
+      const response = await fetch('https://implementasi-open-aiapi-dalle.vercel.app/api/v1/dalle', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
